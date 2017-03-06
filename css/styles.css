@@ -1,0 +1,88 @@
+/*General Header/Footer CSS that will appear on every page*/
+
+/*I want the site to be responsive. How should I handle? Or is it better to set a width?*/
+.h_container, .a_container  {
+  margin: 0 auto;
+  width: 960px;
+}
+
+article, footer  {
+  background-color: #EEEEEE;
+  border: 1px solid #333;
+}
+
+header  {
+  display: flex;
+  background-color: #EEEEEE;
+  border-bottom: 3px solid #333;
+}
+
+header .logo {
+  background-color: blue;
+  border: 1px solid #333;
+  height: 100px;
+  width: 20%;
+}
+
+nav {
+  width:80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav .nav-item {
+  border: 1px solid #333;
+  background-color: blue;
+  height: 50px;
+  margin-left: 2%;
+  margin-top: 20px;
+  width: 15%;
+}
+
+footer  {
+  height: 40px;
+  margin-top: 50px;
+}
+
+/*Homepage*/
+
+.home_images  {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 50px;
+}
+
+.home_images article {
+  flex-grow: 1;
+}
+
+/*About*/
+
+.a_content-container  {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  background-color: #EEEEEE;
+  border: 1px solid #333;
+  margin-top: 50px;
+/*  justify-content: space-between;
+  align-items: stretch;*/
+}
+
+.a_content-container aside {
+  width: 30%;
+  height: 300px;
+  background-color: blue;
+  border: 1px solid #333;
+}
+
+.a_content-container article {
+  width: 60%;
+  height: 600px;
+  margin-left: 10%;
+  background-color: blue;
+  border: 1px solid #333;
+}
