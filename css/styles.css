@@ -1,7 +1,7 @@
 /*General Header/Footer CSS that will appear on every page*/
 
 /*I want the site to be responsive. How should I handle? Or is it better to set a width?*/
-.h_container, .a_container  {
+.h_container, .a_container, .c_container  {
   margin: 0 auto;
   width: 960px;
 }
@@ -86,3 +86,32 @@ footer  {
   background-color: blue;
   border: 1px solid #333;
 }
+
+/*Contact*/
+
+.c_content-container  {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  background-color: #EEEEEE;
+  border: 1px solid #333;
+  margin-top: 50px;
+/*  justify-content: space-between;
+  align-items: stretch;*/
+}
+
+.c_content-container aside {
+  width: 30%;
+  height: 300px;
+  background-color: blue;
+  border: 1px solid #333;
+}
+
+.c_content-container article {
+  width: 60%;
+  height: 600px;
+  margin-left: 10%;
+  background-color: blue;
+  border: 1px solid #333;
+}
+
