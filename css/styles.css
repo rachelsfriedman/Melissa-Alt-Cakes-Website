@@ -1,7 +1,7 @@
 /*General Header/Footer CSS that will appear on every page*/
 
 /*I want the site to be responsive. How should I handle? Or is it better to set a width?*/
-.h_container, .a_container, .c_container, .tc_container, .p_container  {
+.h_container, .a_container, .c_container, .tc_container, .p_container, .sc_container  {
   margin: 0 auto;
   width: 960px;
 }
@@ -136,6 +136,24 @@ footer  {
 
 .tc_image {
   width: 30%;
+  height: 200px;
+  background-color: blue;
+  border: 1px solid #333;
+  margin-bottom: 5%;
+
+}
+
+/*sculpted cakes*/
+.sc_content-container  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.sc_image {
+  width: 45%;
   height: 200px;
   background-color: blue;
   border: 1px solid #333;
