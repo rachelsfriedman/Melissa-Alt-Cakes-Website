@@ -1,47 +1,64 @@
 /*General Header/Footer CSS that will appear on every page*/
 
 /*I want the site to be responsive. How should I handle? Or is it better to set a width?*/
+body {
+  font: sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
 .h_container, .a_container, .c_container, .tc_container, .p_container, .sc_container  {
   margin: 0 auto;
   width: 960px;
 }
 
-article, footer  {
-  background-color: #EEEEEE;
-  border: 1px solid #333;
+#page-header  {
+  border-bottom: 3px solid #333;
+  padding: 0 3%;
+  background: lightblue;
 }
 
-header  {
+.wrapper-top {
   display: flex;
-  background-color: #EEEEEE;
-  border-bottom: 3px solid #333;
+  width: 100%;
+  justify-content: space-between;
 }
 
 header .logo {
-  background-color: blue;
+  background-color: ‎#EEE;
   border: 1px solid #333;
   height: 100px;
-  width: 20%;
+  float: left;
 }
 
-nav {
-  width:80%;
-  display: flex;
-  justify-content: flex-end;
+#page-header nav {
+  float:right;
+  padding-top: 30px; 
 }
 
-nav .nav-item {
-  border: 1px solid #333;
-  background-color: blue;
-  height: 50px;
-  margin-left: 2%;
+#page-header nav li {
+  float: left;
+  list-style: none;
+}
+
+#page-header nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px 15px;
+  font-weight: bold;
+}
+
+p {
   margin-top: 20px;
-  width: 15%;
+  text-align: center;
 }
 
 footer  {
-  height: 40px;
-  margin-top: 50px;
+  height: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Homepage*/
@@ -55,8 +72,10 @@ footer  {
   margin-top: 50px;
 }
 
-.home_images article {
+.home_images div {
   flex-grow: 1;
+  background-color: #EEEEEE;
+  border: 1px solid #333;
 }
 
 /*About*/
