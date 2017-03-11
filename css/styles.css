@@ -1,10 +1,10 @@
 /*General Header/Footer CSS that will appear on every page*/
 
 /*Test Change - to be responsive. How should I handle? Or is it better to set a width?*/
-html {
-  font: sans-serif;
+body {
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
-  color: black;
+  line-height: 1.5;
 }
 
 .h_container, .a_container, .c_container, .tc_container, .p_container, .sc_container  {
@@ -112,7 +112,6 @@ footer  {
 /*  height: 600px;*/
   display: flex;
   flex-direction: row;
-  background-color: #EEEEEE;
   margin-top: 20px;
 }
 
@@ -124,9 +123,55 @@ footer  {
 
 .c_content-container article {
   width: 60%;
-  /*height: 600px;*/
   margin-left: 10%;
+  background: #EEE;
 }
+
+.c_content-container h3 {
+  /*color: lightblue;*/
+  text-align: center;
+}
+
+.c_content-container p {
+  /*color: lightblue;*/
+}
+
+.form, .contact {
+  margin-left: 5%;
+}
+
+.entry {
+  background: #fff;
+  /*border: 1px solid #111;*/
+  border-radius: 3px;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+  display: inline-block;
+  width: 90%;
+  height: 30px;
+  /*vertical-align: middle;*/
+  /*box-shadow: #111 0 0 20px;*/
+}
+
+#message {
+  height: 400px;
+}
+
+#submit-btn {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  background: lightblue;
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 12px;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
 
 /*press*/
 .p_content-container  {
