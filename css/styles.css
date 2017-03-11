@@ -1,8 +1,8 @@
 /*General Header/Footer CSS that will appear on every page*/
 
 /*Test Change - to be responsive. How should I handle? Or is it better to set a width?*/
-body {
-  font: 'sans-serif';
+html {
+  font: sans-serif;
   font-size: 15px;
   color: black;
 }
@@ -28,8 +28,8 @@ body {
 header .logo {
   background-color: ‎#EEE;
   border: 1px solid #333;
-  height: 100px;
-  width: 30px;
+  height: 50px;
+  width: 20%;
   float: left;
 }
 
@@ -98,6 +98,7 @@ footer  {
 .a_content-container article {
   width: 60%;
   margin-left: 10%;
+  padding-right: 2%;
 }
 
 .a-content-container p {
@@ -108,27 +109,23 @@ footer  {
 /*Contact*/
 
 .c_content-container  {
-  height: 600px;
+/*  height: 600px;*/
   display: flex;
   flex-direction: row;
   background-color: #EEEEEE;
-  border: 1px solid #333;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-.c_content-container aside {
+.c_content-container img {
   width: 30%;
   height: 300px;
-  background-color: blue;
   border: 1px solid #333;
 }
 
 .c_content-container article {
   width: 60%;
-  height: 600px;
+  /*height: 600px;*/
   margin-left: 10%;
-  background-color: blue;
-  border: 1px solid #333;
 }
 
 /*press*/
