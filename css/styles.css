@@ -5,12 +5,13 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   line-height: 1.5;
+  padding-top: 50px;
 }
 
-.h_container, .a_container, .c_container, .tc_container, .p_container, .sc_container  {
+/*.h_container, .a_container, .c_container, .tc_container, .p_container, .sc_container  {
   margin: 0 auto;
   width: 960px;
-}
+}*/
 
 #page-header  {
   border-bottom: 3px solid #333;
@@ -25,12 +26,29 @@ body {
   justify-content: space-between;
 }
 
-header .logo {
-  background-color: ‎#EEE;
-  border: 1px solid #333;
-  height: 50px;
+/*Fixing Bootstrap*/
+/*
+nav .logo {
+  border: 2px solid #333;
+  height: 100px;
   width: 20%;
   float: left;
+}
+
+.navlinks {
+  float:right;
+  padding-top: 75px; 
+}*/
+
+/*End of CSS Fixing for Nav with Bootstrap*/
+
+#page-header .logo {
+  width: 20%;
+  float: left;
+}
+
+.logo img {
+  max-width: 100%
 }
 
 #page-header nav {
@@ -38,12 +56,14 @@ header .logo {
   padding-top: 75px; 
 }
 
+
+
 #page-header nav li {
   float: left;
   list-style: none;
 }
 
-#page-header nav a {
+nav li a {
   display: block;
   text-decoration: none;
   padding: 20px 15px;
@@ -77,12 +97,21 @@ footer  {
 .home_images div {
   flex-grow: 1;
   background-color: #EEEEEE;
-  border: 1px solid #333;
+}
+
+.home_images img {
+  width: 100%
+}  
+/*  border: 1px solid #333;
+}*/
+
+.irow {
+  height: 300px;
 }
 
 /*About*/
 
-.a_content-container  {
+/*.a_content-container  {
   display: flex;
   flex-direction: row;
   background-color: #EEEEEE;
@@ -104,13 +133,15 @@ footer  {
 .a-content-container p {
   text-align: left;
   font: garamond;
-}
+}*/
+
+
 
 /*Contact*/
-
+/*
 .c_content-container  {
 /*  height: 600px;*/
-  display: flex;
+ /* display: flex;
   flex-direction: row;
   margin-top: 20px;
 }
@@ -129,28 +160,28 @@ footer  {
 
 .c_content-container h3 {
   /*color: lightblue;*/
-  text-align: center;
+  /*text-align: center;
 }
 
-.c_content-container p {
+.c_content-container p {*/
   /*color: lightblue;*/
-}
+/*}
 
 .form, .contact {
   margin-left: 5%;
 }
 
 .entry {
-  background: #fff;
+  background: #fff;*/
   /*border: 1px solid #111;*/
-  border-radius: 3px;
+ /* border-radius: 3px;
   box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
   display: inline-block;
   width: 90%;
-  height: 30px;
+  height: 30px;*//**//**/*/
   /*vertical-align: middle;*/
   /*box-shadow: #111 0 0 20px;*/
-}
+/*}
 
 #message {
   height: 400px;
@@ -170,7 +201,7 @@ footer  {
   box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
   border-radius: 5px;
   margin-top: 20px;
-}
+}*/*/
 
 
 /*press*/
@@ -188,7 +219,7 @@ footer  {
 }
 
 /*tiered cakes*/
-.tc_content-container  {
+/*.tc_content-container  {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -203,10 +234,10 @@ footer  {
   border: 1px solid #333;
   margin-bottom: 5%;
 
-}
+}*/
 
 /*sculpted cakes*/
-.sc_content-container  {
+/*.sc_content-container  {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -219,6 +250,30 @@ footer  {
   height: 200px;
   background-color: blue;
   border: 1px solid #333;
-  margin-bottom: 5%;
+  margin-bottom: 5%;*/
 
+  .row {
+    margin-top: 50px;
+  }
+
+    .brand {
+        display: flex;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+        width:150px;
+        height: 150px;
+    }
+
+.navbar-header a {
+  width:150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
 }
