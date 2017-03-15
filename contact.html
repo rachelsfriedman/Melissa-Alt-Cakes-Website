@@ -1,84 +1,107 @@
 <!DOCTYPE html>
 <html>
-  
-  <head>
-    <title>Melissa Alt | CONTACT</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-  </head>
-  
-  <body>
-    <div class="c_container">
-      <header id="page-header">
-        <div class="wrapper-top">
-          <div class="logo">
-            <a href="index.html"><img src="#" alt="MAC logo" />
-            </a>
-          </div>
-          
-          <nav>
-            <ul>
-              <li class="nav-item"><a href="sculptedcakes.html">Sculpted Cakes</a></strong></li>
-              <li class="nav-item"><a href="tieredcakes.html">Tiered Cakes</a></strong></li>      
-              <li class="nav-item"><a href="press.html">In the Media</a></li>     
-              <li class="nav-item"><a href="about.html">About</a></li>      
-              <li class="nav-item"><a href="contact.html">Contact</a></li>      
-            </ul>
-          </nav>
+	<head>
+		<title>Melissa Alt</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+
+	<body>
+
+<!--     <div class="brand container"><img src="images/logo.jpg" class="img-responsive"></div> -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+                <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" class="img-responsive"></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="sculptedcakes.html">Sculpted Cakes</a>
+                    </li>
+                    <li>
+                        <a href="tieredcakes.html">Tiered Cakes</a>
+                    </li>  
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-      </header>
-      
-      <div class="c_content-container"> 
-        <img src="#">
-        <article>
-          
-          <div class=contact>
-            <h3>Contact Us</h3>
-            <p> <strong>Telephone:</strong> 201-362-8295</p>
-            <p><strong>Email:</strong> melissaaltcakes@gmail.com</p>
-          </div>
+        <!-- /.container -->
+    </nav>
 
-          <div class = "form">
-            <form>
-              <h4>Name</h4>
-              <input type="text" class="entry" id="name" placeholder="Enter a city name...">
-              <h4>Email</h4>
-              <input type="text" class="entry" id="email">
-              <h4>Telephone</h4>
-              <input type="text" class="entry" id="phone">
-              <h4>Message</h4>
-              <input type="text" class="entry" id="message">
-              <input type="submit" value="SEND EMAIL" id="submit-btn">
-            </form>
-
-
-            <!-- <div class=formentries>
-              <h4>Name</h4>
-              <div class="entry" id="name"></div>
-              <h4>Email</h4>
-              <div class="entry" id="email"></div>
-              <h4>Telephone</h4>
-              <div class="entry" id="phone"></div>
-              <h4>Message</h4>
-              <div class="entry" id="message"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-5 contact_left">
+                <img src="images/contact.jpg" class="img-responsive">
             </div>
 
-            <BUTTON>SEND EMAIL</BUTTON> -->
-          </div>  
-        </article>
-      </div>
-      
-      <footer>
-        <div class="wrapper bottom">
-          <a href="facebook link" target="_blank"><img src="#" alt="MAC facebook" />
-          </a>
-          <a href="instagram link" target="_blank"><img src="#" alt="MAC instagram" />
-          </a> 
-          <a href="pinterest link" target="_blank"><img src="#" alt="MAC pinterest" />
-          </a>         
-        </div>  
-      </footer>
+            <div class="box ">
+                <div class="col-md-7 col-sm-7">
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Contact Us</strong>
+                    </h2>
+                    <hr>
+                    <p> <strong>Telephone:</strong> 201-362-8295</p>
+                    <p><strong>Email:</strong> melissaaltcakes@gmail.com</p>
+                    <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Contact Form</strong>
+                    </h2>
+                    <form role="form">
+                        <div class="row">
+                            <div class="form-group col-lg-4">
+                                <label>Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label>Phone Number</label>
+                                <input type="tel" class="form-control">
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="form-group col-lg-12">
+                                <label>Message</label>
+                                <textarea class="form-control" rows="6"></textarea>
+                            </div>
+                            <div class="form-group col-lg-12">
+                                <input type="hidden" name="save" value="contact">
+                                <button type="submit" class="btn btn-default">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+
+        <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    
+</body>
 </html>
