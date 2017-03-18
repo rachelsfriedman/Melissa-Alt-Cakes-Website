@@ -1,11 +1,8 @@
-/*General Header/Footer CSS that will appear on every page*/
-
-/*Test Change - to be responsive. How should I handle? Or is it better to set a width?*/
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  padding-top: 150px;
+  /*padding-top: 150px;*/
  /* margin: 0 auto;*/
 }
 
@@ -13,30 +10,79 @@ body {
     margin-top: 50px;
   }
 
-#ingredients {
-  margin-top: 20px;
-  background-color: #EEE;
-  text-align: center;
+/*.irow {
+  height: 300px;
+}  */
+
+/*Navbar*/
+
+div #brand {
+  display: flex;
+  width: 450px;
+  align-items: center;
+  justify-content: center;
 
 }
 
-/*footer  {
-  height: 20px;
-  margin-top: 20px;
+nav.navbar {
+  background-color: white;
+  border-top: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+ul.nav {
+  padding-top: 50px;
+}
+}
+
+a.navbar-brand {
+  width:200px;
+  height: 150px;
   display: flex;
+  align-items: center;
+}
+
+.homepage-images  {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+
+ div img {
+  margin-top: 50px;
+}
+ .row {
+  margin-top: 0;
+}
+
+div #brand {
+  width: 300px;
+  align-items: center;
   justify-content: center;
-  align-items: center;*/
+}
 }
 
 /*Footer*/
 
-footer .social {
-  background-color: lightblue;
+footer.social {
+  /*background-color: lightblue;*/
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .social ul {
   list-style: none;
+  padding-left: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  /*margin-top: 50px;*/
 }
 
 .social ul li {
@@ -47,30 +93,5 @@ footer img {
   height: 40px;
 }
 
-.irow {
-  height: 300px;
-}
 
 
-
-    .brand {
-        display: flex;
-        margin: 0;
-        padding: 30px 0 10px;
-        text-align: center;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
-        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 5em;
-        font-weight: 700;
-        line-height: normal;
-        color: #fff;
-        width:150px;
-        height: 150px;
-    }
-
-.navbar-header a {
-  width:150px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-}

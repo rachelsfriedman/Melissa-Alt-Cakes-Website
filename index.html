@@ -10,11 +10,19 @@
   
   <body>
 
-      <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+   <div class="container">
+        <a id="brand" href="index.html"><img src="images/text.jpg" class="img-responsive"></a>
+     </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
+                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+
+                <a class="navbar-brand remove" href="index.html"><img src="images/logo.jpg" class="img-responsive"></a>
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -22,12 +30,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-                <a class="navbar-brand" href="index.html">Melissa Alt Cakes</a>
+
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="about.html">About</a>
                     </li>
@@ -47,28 +54,14 @@
         <!-- /.container -->
     </nav>
 
+    <div class="container-fluid"> 
+<!--       <div class="row">
+        <p id="Ingredients">All ingredients are kosher and cruelty free</p>  
+      </div> -->
 
-<!--       <header id="page-header">
-        <div class="wrapper-top">
-          <div class="logo">
-            <a href="index.html"><img src="#" alt="MAC logo" />
-            </a>
-          </div>
-          
-          <nav>
-            <ul>
-              <li class="nav-item"><a href="sculptedcakes.html">Sculpted Cakes</a></strong></li>
-              <li class="nav-item"><a href="tieredcakes.html">Tiered Cakes</a></strong></li>      
-              <li class="nav-item"><a href="press.html">In the Media</a></li>     
-              <li class="nav-item"><a href="about.html">About</a></li>      
-              <li class="nav-item"><a href="contact.html">Contact</a></li>      
-            </ul>
-          </nav>
-        </div>
-      </header> -->
-      
-      <div class="container-fluid"> 
-        <div class="row">
+      <!-- Homepage Image Container  -->
+            
+        <div class=" homepage-images row">
           <div class="col-md-6 col-sm-6" id="tieredslideshow">
             <img src="images/homepage/homepageleft/pink.jpg" alt="tiered cake slideshow" class="img-responsive"/>
           </div>
@@ -77,24 +70,20 @@
           </div>
         </div>
 
-        <div class="row">
-          <p id="Ingredients">All ingredients are kosher and cruelty free</p>  
-        </div>
       </div>
 
     <!-- Footer -->
       <footer class="social">
           <div class="container">
-
             <ul class="social_icons text-center"> 
               <li>
                 <a href="https://www.facebook.com/MelissaAltCakes" target="_blank"><img src="images/facebook.png" alt="facebook"/></a>
               </li>
               <li>
-                <a href="instagram link" target="_blank"><img src="images/instagram.png" alt="instagram"/></a> 
+                <a href="https://www.instagram.com/melissaaltcakes" target="_blank"><img src="images/instagram.png" alt="instagram"/></a> 
               </li>
               <li>
-                <a href="pinterest link" target="_blank" type="button" class="btn-floating btn-large btn-ins"><img src="images/pinterest.png" alt="pinterest"/></a> 
+                <a href="https://www.pinterest.com/melissaaltcakes/melissa-alt-cakes" target="_blank" type="button" class="btn-floating btn-large btn-ins"><img src="images/pinterest.png" alt="pinterest"/></a> 
               </li>
              </ul>  
           </div>  
